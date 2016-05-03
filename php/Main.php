@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title>P&aacute;gina Principal</title>
@@ -6,7 +7,7 @@
 	
 	<body>
 		
-		<h1> Bienvenidos a LGONsite</h1>
+		<h1> Bienvenido <i><?php session_start();  echo $_SESSION['usu'];?></i>  a LGONsite</h1>
 		
 	</body>
 	

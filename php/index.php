@@ -1,9 +1,4 @@
-<?php 
-//Validación
 
-
- 
-?>
 <!DOCTYPE HTML>
 
 <html>
@@ -14,12 +9,12 @@
 	
 	<body>
 		<h1>Logeo con Variables de SESSION</h1>
-		<form action="index.php" method="post" id="form_login">
+		<form action="Validar.php" method="post" id="form_login">
 			<fieldset>
 				<legend>Login</legend>
-				Usuario: <br /><input type="text" name="usuario" size="15" /> <br />
-				Contrase&ntilde;a: <br /><input type="password" name="contrasena" size="15" /> <br />
-				<input type="submit" name="boton">
+				Usuario: <br /><input type="text" name="usuario" size="15" autofocus required/> <br />
+				Contrase&ntilde;a: <br /><input type="password" name="contrasena" size="15" required/> <br />
+				<input type="submit" value="Entrar" name="boton">
 			</fieldset>
 		</form>
 		<br /><br />
