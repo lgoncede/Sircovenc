@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 
 <html>
@@ -14,7 +13,7 @@
 				<legend>Login</legend>
 				Usuario: <br /><input type="text" name="usuario" size="15" autofocus required/> <br />
 				Contrase&ntilde;a: <br /><input type="password" name="contrasena" size="15" required/> <br />
-				<input type="submit" value="Entrar" name="boton">
+				<button type="submit" value="1" name="boton">Entrar</button>
 			</fieldset>
 		</form>
 		<br /><br />
