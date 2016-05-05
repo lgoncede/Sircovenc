@@ -1,25 +1,28 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>Variables de Sesi&oacute;n</title>
+		<title>SIRCOVEC</title>
 		<meta charset="utf-8" />
 	</head>
 	
 	<body>
-		<h1>Logeo con Variables de SESSION</h1>
+		<h1>SIRCOVENC</h1>
+		<h2>(Sistema de Registro para el Control de Venta de Combustible)</h2>
 		<form action="Validar.php" method="post" id="form_login">
 			<fieldset>
 				<legend>Login</legend>
-				Usuario: <br /><input type="text" name="usuario" size="15" autofocus required/> <br />
-				Contrase&ntilde;a: <br /><input type="password" name="contrasena" size="15" required/> <br />
-				<button type="submit" value="1" name="boton">Entrar</button>
+				<label for="usuario">Usuario:</label> <br />
+				<input type="text" id="usuario" name="usuario" size="15" autofocus required/> <br />
+				<label for="contrasena">Contrase&ntilde;a:</label><br />
+				<input type="password" id="contrasena" name="contrasena" size="15" required/> <br />
+				<input type="submit" value="Entrar" name="entrar">
 			</fieldset>
 		</form>
 		<br /><br />
-		<a href="../html/FormRegist.html">Crear Cuenta</a>
+		<a href="../html/FormRegist.html">Crear Usuario</a>
 	</body>
 	
-	<title>
-	</title>
+	<footer>
+		<p>Sistema creado por <i>Lgoncede</i></p>
+	</footer>
 </html>

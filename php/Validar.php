@@ -9,7 +9,7 @@ session_start();
  $query = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND contrasena='$contrasena'";
  $result = mysql_query($query);
  
- if ( mysql_num_rows($result) == 1)
+ if ( mysql_num_rows($result) == 2)
  {
 	 $fila = mysql_fetch_assoc($result);
 	  $_SESSION['usu'] = $fila ['usuario'];

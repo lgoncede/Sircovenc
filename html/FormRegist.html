@@ -8,9 +8,13 @@
 		<form action="../php/Regist.php" method="POST" id="form_regist">
 			<fieldset>
 				<legend>Crear Cuenta</legend>
-				Usuario: <br /><input type="text" name="usuario" size="15" autofocus required /> <br />
-				Contrase&ntilde;a: <br /><input type="password" name="contrasena" size="15" required /> <br />
-				<input type="submit" value="Guardar">
+				<label for="usuario">Usuario:</label> <br />
+				<input type="text" id="usuario" name="usuario" size="15" autofocus required /> <br />
+				<label for="contrasena">Contrase&ntilde;a:</label> <br />
+				<input type="password" id="contrasena"name="contrasena" size="15" required /> <br />
+				<label for="recontrasena">Re-Contrase&ntilde;a:</label> <br />
+				<input type="password" id="recontrasena"name="recontrasena" size="15" required /> <br />
+				<input type="submit" value="Guardar" name="guardar">
 			</fieldset>
 		</form>
 		
