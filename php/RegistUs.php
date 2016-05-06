@@ -22,7 +22,7 @@ else
 		$sql = "INSERT INTO usuarios (usuario,contrasena) VALUES ('$usuario','$contrasena')";
 		$resul = mysql_query($sql) or die("No se  pudo guardar los datos");
 		
-		header("location:index.php");
+		header('location:../html/FormRegistES.html');
 	}
 	else
 		echo "Las contrase&ntilde;as no coinciden";

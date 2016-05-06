@@ -1,30 +1,49 @@
 <?php session_start();  
-if (!empty($_POST['salir']))
-{
-	$_SESSION['usu']='';
-	session_destroy();
-}
+	if (!empty($_POST['salir']))
+	{
+		$_SESSION['usu']='';
+		session_destroy();
+	}
 
-if (empty($_SESSION['usu']))
+	if (empty($_SESSION['usu'])) #si la sesión esta vacia se redirecciona al index
 
-header ('location:index.php');
+	header ('location:index.php');
+
+		include('../html/head.html');
 ?>
-<html>
-	<head>
-		<title>P&aacute;gina Principal</title>
-		<meta charset="utf-8" />
-	</head>
-	
-	<body>
-		<form action="Main.php" method="POST">
-			<button name="salir" value="1">Salir</button>
-		</form>
+		<body>
+			<h1>SIRCOVENC</h2>
+			<nav>
+				<ul>
+					<li>
+						<!-- home-->
+					</li>
+					
+					<li>
+						<!-- aforo de tanques-->
+					</li>
+					
+					<li>
+						<!-- control de surtidores-->
+					</li>
+					
+					
+					<li>
+						<!-- cerrar sesión-->
+					</li>
+					
+					<li>
+						<!-- historial-->
+					</li>
+					
+					<li>
+						<!-- cerrar sesión-->
+					</li>
+				</ul>
+			</nav>
+		</body>
+<?php
 		
-		<h1> Bienvenido <i><?php echo $_SESSION['usu'];?></i>  a LGONsite</h1>
 		
-	</body>
-	
-	<footer>
-		<p>Creado por Lgoncede</p>
-	</footer>
-</html>
+		include('../html/footer.html');
+?>

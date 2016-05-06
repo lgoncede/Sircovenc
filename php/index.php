@@ -19,7 +19,7 @@
 			</fieldset>
 		</form>
 		<br /><br />
-		<a href="../html/FormRegist.html">Crear Usuario</a>
+		<a href="../html/FormRegistUs.html">Crear Usuario</a>
 	</body>
 	
 	<footer>

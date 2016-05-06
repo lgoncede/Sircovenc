@@ -14,6 +14,10 @@ session_start();
 	 $fila = mysql_fetch_assoc($result);
 	  $_SESSION['usu'] = $fila ['usuario'];
 	  
+	 if(mysql_close($con)==FALSE)
+		echo "NO se pudo cerrar la conexion a MySqL";
+		exit();
+	 
 	  header('location:Main.php');
  }
  else
@@ -21,4 +25,7 @@ session_start();
 	 echo "usuario o contrase&ntilde;a incorrecta";
 	 echo "<br /><a href='../php/index.php' >Regresar</a>";
   }
+  
+  
+  
 ?>
