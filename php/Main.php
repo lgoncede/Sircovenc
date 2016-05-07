@@ -16,31 +16,31 @@
 			<nav>
 				<ul>
 					<li>
-						<!-- home-->
+						<a href="Main.php">P&aacute;gina Principal</a>
 					</li>
 					
 					<li>
-						<!-- aforo de tanques-->
+						<a href="Main.php">Recepci&oacute;n de Combustible</a>
 					</li>
 					
 					<li>
-						<!-- control de surtidores-->
+						<a href="Main.php">Venta de Combustible</a>
 					</li>
 					
 					
 					<li>
-						<!-- cerrar sesión-->
+						<a href="Main.php">Historial</a>
 					</li>
 					
 					<li>
-						<!-- historial-->
+						<a href="Main.php">Cerrar Sessi&oacute;n</a>
 					</li>
 					
-					<li>
-						<!-- cerrar sesión-->
-					</li>
 				</ul>
 			</nav>
+			
+			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br />Nombre de la Estaci&oacute;n : <i>".$_SESSION['nom_es']."</i> <br /> 
+			R.I.F: <i>".$_SESSION['rif']."</i><br /> Direcci&oacute;n: <i>".$_SESSION['direc']."</i><br /> Telefono: <i>".$_SESSION['tlf']."</i><br />"; ?>
 		</body>
 <?php
 		
