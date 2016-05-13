@@ -11,27 +11,9 @@ session_start();
  
  if ( mysql_num_rows($result) == 1)
  {
-	 $fila = mysql_fetch_assoc($result);
+	  $fila = mysql_fetch_assoc($result);
 	  $_SESSION['usu'] = $fila ['usuario'];
-	 
-	
-	 $sql = "SELECT * FROM datoes" ;
-	 $query  = mysql_query($sql);
-	 
-	 if(!$query)
-		 
-		 die ("Se produjo un error al realizar la consulta");
-		 
-		 #********************************Resolver error al cargar los datos de la E/S en las VS********************************************
-	 while (mysql_fetch_row($query)) 
-	 { 
-		$_SESSION['nom_es'] = $query['nombre']; 
-		$_SESSION['rif'] = $query['rif']; 
-		$_SESSION['direc'] = $query['direc']; 
-		$_SESSION['tlf'] = $query['tlf']; 
-	 } 
-		
-	   
+  
 	  header('location:Main.php');
  }
  else

@@ -1,10 +1,6 @@
-<?php session_start();  
-	if (!empty($_POST['salir']))
-	{
-		$_SESSION['usu']='';
-		session_destroy();
-	}
-
+<?php 
+	session_start();  
+	
 	if (empty($_SESSION['usu'])) #si la sesión esta vacia se redirecciona al index
 
 	header ('location:index.php');
@@ -20,27 +16,33 @@
 					</li>
 					
 					<li>
-						<a href="Main.php">Recepci&oacute;n de Combustible</a>
+						<a href="Compra.php">Recepci&oacute;n de Combustible</a>
 					</li>
 					
 					<li>
-						<a href="Main.php">Venta de Combustible</a>
+						<a href="Venta.php">Venta de Combustible</a>
 					</li>
 					
 					
 					<li>
-						<a href="Main.php">Historial</a>
+						<a href="Historial">Historial</a>
 					</li>
 					
 					<li>
-						<a href="Main.php">Cerrar Sessi&oacute;n</a>
+						<a href="Logout.php">Cerrar Sessi&oacute;n</a>
 					</li>
 					
 				</ul>
 			</nav>
 			
-			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br />Nombre de la Estaci&oacute;n : <i>".$_SESSION['nom_es']."</i> <br /> 
-			R.I.F: <i>".$_SESSION['rif']."</i><br /> Direcci&oacute;n: <i>".$_SESSION['direc']."</i><br /> Telefono: <i>".$_SESSION['tlf']."</i><br />"; ?>
+			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br />";?>
+			
+			<figure>
+			<img src="../img/img_es.jpg" width="500" height="350" >
+			</figure>
+				<!-- en php -->
+				
+				<p>Cantidad de Combustible que hay en los tanques ....</p>
 		</body>
 <?php
 		
