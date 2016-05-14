@@ -42,7 +42,7 @@
 			</figure>
 				<!-- en php -->
 				
-				<?php include ('inventario.php');?>
+				<?php include ('inventario.php');?> <!--Mostrar por semanalmente las gandolas que han llegado-->
 		</body>
 <?php
 		

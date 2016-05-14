@@ -9,11 +9,12 @@ if (!$result)
 
 	die ("no se pudo ejecutar la query");
 
-echo " Gas91 Gas95 D <br />";
+echo " <table border='1'><tr><td>Gas91</td><td>Gas95</td><td>D</td></tr>";
 while ($row = mysql_fetch_assoc($result))
 {
-	echo $row['ltrs_Gas_91'];
-	echo $row['ltrs_Gas_95'];
-	echo $row['ltrs_D']."<br />";
+	echo "<tr><td>".$row['ltrs_Gas_91'];
+	echo "</td><td>".$row['ltrs_Gas_95'];
+	echo "</td><td>".$row['ltrs_D']."</td></tr>";
 }
+echo "</table>"
 ?>
