@@ -42,7 +42,7 @@
 			</figure>
 				<!-- en php -->
 				
-				<p>Cantidad de Combustible que hay en los tanques ....</p>
+				<?php include ('inventario.php');?>
 		</body>
 <?php
 		
