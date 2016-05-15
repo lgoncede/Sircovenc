@@ -1,7 +1,7 @@
 <?php 
 include ('../config.php');
 
-$sql = "SELECT *FROM compras";
+$sql = "SELECT * FROM cant_combus_actual";
 
 $result = mysql_query($sql);
 
@@ -12,9 +12,12 @@ if (!$result)
 echo " <table border='1'><tr><td>Gas91</td><td>Gas95</td><td>D</td></tr>";
 while ($row = mysql_fetch_assoc($result))
 {
-	echo "<tr><td>".$row['ltrs_Gas_91'];
-	echo "</td><td>".$row['ltrs_Gas_95'];
-	echo "</td><td>".$row['ltrs_D']."</td></tr>";
+	echo "<tr><td>".$row['gas91'];
+	echo " Ltrs</td><td>".$row['gas95'];
+	echo " Ltrs</td><td>".$row['diesel']." Ltrs</td></tr>";
 }
 echo "</table>"
+
+
+#cada tanque de gasolina almacena 35.000 Ltrs y el de diesel 45.000 Ltrs !!!!!
 ?>

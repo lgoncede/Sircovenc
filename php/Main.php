@@ -35,14 +35,14 @@
 				</ul>
 			</nav>
 			
-			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br />";?>
+			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br />" ;?>
 			
 			<figure>
 			<img src="../img/img_es.jpg" width="500" height="350" >
 			</figure>
-				<!-- en php -->
 				
-				<?php include ('inventario.php');?> <!--Mostrar por semanalmente las gandolas que han llegado-->
+				
+				<?php include ('cant_combus_actual.php');?> <!--Mostrar por semanalmente las gandolas que han llegado-->
 		</body>
 <?php
 		

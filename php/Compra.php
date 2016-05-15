@@ -36,13 +36,15 @@ session_start();
 				</ul>
 			</nav>
 			
+			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br /><br />" ;?>
+			
 			<form method="POST" action="RegistroCompra.php" id="FormCompra">
 				<fieldset>
 					<legend>Registro de Compra de Combustible</legend>
 					<label for="EmpTrans">
-					<input type="text" placeholder="Nombre de la empresa Transportadora" size="30" name="EmpTrans"><br />
+					<input type="text" placeholder="Nombre de la empresa Transportadora" size="30" name="EmpTrans" autofocus required><br />
 					<label for="NombConduc">
-					<input type="text" placeholder="Nombre del conductor" size="30" name="NombConduc"><br />
+					<input type="text" placeholder="Nombre del conductor" size="30" name="NombConduc" required><br />
 					<label for="Gas91">
 					<input type="text" placeholder="gas91" size="30" name="Gas91"><br />
 					<label for="Gas95">
