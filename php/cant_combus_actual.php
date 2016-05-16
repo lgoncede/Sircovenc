@@ -1,6 +1,7 @@
 <?php 
 include ('../config.php');
 
+
 $sql = "SELECT * FROM cant_combus_actual";
 
 $result = mysql_query($sql);
@@ -17,6 +18,10 @@ while ($row = mysql_fetch_assoc($result))
 	echo " Ltrs</td><td>".$row['diesel']." Ltrs</td></tr>";
 }
 echo "</table>"
+
+
+
+
 
 
 #cada tanque de gasolina almacena 35.000 Ltrs y el de diesel 45.000 Ltrs !!!!!

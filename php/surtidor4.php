@@ -1,7 +1,7 @@
 <?php 
 session_start();  
 	
-	if (empty($_SESSION['usu'])) #si la sesión esta vacia se redirecciona al index
+	if (empty($_SESSION['usu'])) #si la sesiÃ³n esta vacia se redirecciona al index
 
 	header ('location:index.php');
 ?>
@@ -38,10 +38,18 @@ session_start();
 			
 			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br /><br />" ;?>
 			
-			<a href="surtidor1.php">Surtidor 1 </a><br />
-			<a href="surtidor2.php">Surtidor 2 </a><br />
-			<a href="surtidor3.php">Surtidor 3 </a><br />
-			<a href="surtidor4.php">Surtidor 4 </a><br />
+			<form method="POST" action="RegistroVenta.php" id="FormVenta">
+				<fieldset>
+					<legend>Surtidor 4</legend>	
+					
+						<label for="S4NumElecDA">
+						<input type="text" placeholder="Numeracion Electronica DA" size="25" name="S4NumElecDA" ><br />
+						
+						<label for="S4NumElecDB">
+						<input type="text" placeholder="Numeracion Electronica DB" size="25" name="S4NumElecDA" ><br />
+						<input type="submit" value="Guardar" name="guardar">
+				</fieldset>
+			</form>
 	</body>
 	<?php include("../html/footer.html");?>
 </html>
