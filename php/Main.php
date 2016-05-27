@@ -25,7 +25,7 @@
 					
 					
 					<li>
-						<a href="Historial">Historial</a>
+						<a href="Historial">Historial (No disponible)</a>
 					</li>
 					
 					<li>
@@ -35,7 +35,7 @@
 				</ul>
 			</nav>
 			
-			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br />" ;?>
+			<?php echo "Nombre de Usuario: <i>".$_SESSION['usu']."</i><br /> Fecha: ".date('d-m-y') ;?>
 			
 			<figure>
 			<img src="../img/img_es.jpg" width="500" height="350" >
@@ -46,7 +46,7 @@
 					include ('cant_combus_actual.php'); 
 				 	 
 					 
-				?> <!--Mostrar por semanalmente las gandolas que han llegado-->
+				?> <!--Mostrar los días en los que ha llegado gandolas -->
 				
 		</body>
 <?php

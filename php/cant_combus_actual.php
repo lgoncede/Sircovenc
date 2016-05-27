@@ -24,5 +24,5 @@ echo "</table>"
 
 
 
-#cada tanque de gasolina almacena 35.000 Ltrs y el de diesel 45.000 Ltrs !!!!!
+#cada tanque de gasolina almacena 35.000 Ltrs (esta estacion posee 2 tanques de gasolina 91 y 2 de gasolina 95) y el de diesel 45.000 Ltrs !!!!!
 ?>

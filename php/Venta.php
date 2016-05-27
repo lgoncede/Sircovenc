@@ -26,7 +26,7 @@ session_start();
 					
 					
 					<li>
-						<a href="Historial">Historial</a>
+						<a href="Historial">Historial (No disponible)</a>
 					</li>
 					
 					<li>
