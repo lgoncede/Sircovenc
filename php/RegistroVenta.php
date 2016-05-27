@@ -18,14 +18,14 @@
 	$S3NumElec91B = $_POST['S3NumElec91B'];
 	$S3NumElec95B = $_POST['S3NumElec95B'];
 	
-	
+		/*Cambiar por switch*/
 	
 	
 	if (isset($_POST['guardarS1']) && !empty($_POST['guardarS1']))
 	{
 		$sql = "INSERT INTO surtidor1(NumElec91A,NumElec91B,NumElec95A,NumElec95B) VALUES ('$S1NumElec91A','$S1NumElec91B','$S1NumElec95A','$S1NumElec95B')";
 		$result = mysql_query($sql) or die ("No se pudo insertar los datos del surtidor 1");
-		header('location:venta.php');
+		header('location:cal_ltrs_dine.php');
 	}
 	else if (isset($_POST['guardarS2']) && !empty($_POST['guardarS2']))
 	{

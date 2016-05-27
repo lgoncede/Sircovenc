@@ -42,7 +42,12 @@
 			</figure>
 				
 				
-				<?php include ('cant_combus_actual.php');?> <!--Mostrar por semanalmente las gandolas que han llegado-->
+				<?php
+					include ('cant_combus_actual.php'); 
+				 	 
+					 
+				?> <!--Mostrar por semanalmente las gandolas que han llegado-->
+				
 		</body>
 <?php
 		
